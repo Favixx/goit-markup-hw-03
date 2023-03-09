@@ -1,0 +1,229 @@
+:root {
+  --primary-brand-color: #4d5ae5;
+  --pressed-state-color: #404bbf;
+  --dark-color: #2e2f42;
+  --success-color: #31d0aa;
+  --main-text-color: #434455;
+  --secondary-text-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --light-color: #f4f4fd;
+  --modal-overlay-color: #2e2f4266;
+  --hero-background-color: #2e2f42b2;
+  --white-background-color: #ffffff;
+  --modal-background-color: #fcfcfc;
+}
+body {
+  background-color: var(--white-background-color);
+  color: var(--main-text-color);
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.page-header {
+  border-bottom: 1px solid var(--accent-color);
+
+  z-index: 20;
+  top: 0;
+  background-color: var(--white-background-color);
+}
+
+.logo {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.logo-blue,
+.logo-black {
+  font-family: "Raleway" sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 0.03em;
+}
+.site-navigation a:active,
+.site-navigation a:hover,
+.contact-info a:hover,
+.contact-info a:active {
+  color: var(--pressed-state-color);
+  transition: 2s;
+}
+.contact-info:focus-within,
+.site-navigation:focus-within {
+  color: var(--pressed-state-color);
+  transition: 2s;
+}
+
+.logo-blue {
+  color: var(--primary-brand-color);
+  font-family: "Raleway", sans-serif;
+}
+
+.logo-black {
+  color: var(--dark-color);
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+}
+.logo-white {
+  color: var(--light-color);
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.site-navigation {
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.site-navigation > li {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.site-navigation,
+.contact-info {
+  text-align: center;
+}
+
+.email > a,
+.phone-number > a {
+  font-style: normal;
+  font-size: 16px;
+  color: var(--main-text-color);
+}
+
+.hero {
+  background-color: var(--dark-color);
+}
+
+.hero_h1 {
+  color: var(--white-background-color);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
+
+.order-service-but {
+  background-color: var(--primary-brand-color);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  padding: 16px 32px;
+  cursor: pointer;
+}
+.order-service-but:hover {
+  background: var(--pressed-state-color);
+  transition: 2s;
+}
+.order-service-txt {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-background-color);
+}
+.site-navigation a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+.contact-info a {
+  text-decoration: none;
+}
+
+.feature > h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+
+.examples-sec > h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  color: var(--dark-color);
+  text-align: center;
+
+  text-transform: capitalize;
+}
+
+.team-section {
+  background-color: var(--light-color);
+}
+.team-section > h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+
+  text-transform: capitalize;
+  color: var(--dark-color);
+}
+.team-section-ul > h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+.item {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.item p {
+  text-align: center;
+}
+.item h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+
+  text-align: center;
+
+  color: var(--dark-color);
+}
+.footer {
+  background-color: var(--dark-color);
+}
+.footer p {
+  color: var(--accent-color);
+}
+
+.filter-li > button {
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  color: var(--pressed-state-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: 0.5s;
+}
+.filter-li > button:hover {
+  cursor: pointer;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition: 0.5s;
+}
+.filter-li:first-child > button {
+  color: var(--white-background-color);
+  background-color: var(--primary-brand-color);
+}
+
+.portfolio-item h2 {
+  color: var(--dark-color);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  font-family: inherit;
+}
