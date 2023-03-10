@@ -310,18 +310,27 @@ body {
   margin-top: 8px;
 }
 
-.portfolio-item {
-  border: 1px solid #E7E9FC;
-}
-
 .portfolio-ul {
+  margin-right: -24px;
+  margin-bottom: -48px;
   list-style: none;
   display: flex;
-  gap: 24px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
-.portfolio-ul:not(:last-child) {
-  padding-bottom: 48px;
+.portfolio-item {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.portfolio-item:not(:nth-child(3-n)) {
+  margin-top: 48px;
+}
+
+.portfolio-item:not(3n+1) {
+  margin-right: 24px;
 }
 
 .section {
@@ -329,9 +338,6 @@ body {
   padding-top: 120px;
 }
 
-.portfolio-item {
-  border-bottom: 1px solid #e7e9fc;
-}
 
 .logo {
   display: flex;
