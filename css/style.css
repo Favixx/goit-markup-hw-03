@@ -316,8 +316,11 @@ body {
 .portfolio-ul {
   list-style: none;
   display: flex;
-  padding-bottom: 48px;
   gap: 24px;
+}
+
+.portfolio-ul:not(:last-child) {
+  padding-bottom: 48px;
 }
 
 .section {
