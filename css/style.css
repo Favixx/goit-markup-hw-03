@@ -377,12 +377,12 @@ body {
   gap: 24px;
 }
 
-.item h3 {
+.team-item h3 {
   padding-top: 32px;
   padding-bottom: 8px;
 }
 
-.item p {
+.team-item p {
   padding-bottom: 32px;
 }
 
