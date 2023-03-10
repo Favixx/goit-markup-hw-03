@@ -179,6 +179,7 @@ body {
   font-size: 20px;
   line-height: 1.2;
   color: var(--dark-color);
+  margin-bottom: 8px;
 }
 
 .features-ul {
@@ -385,10 +386,6 @@ body {
 .features-ul {
   display: flex;
   gap: 24px;
-}
-
-.feature h3 {
-  margin-bottom: 8px;
 }
 
 .team-section h2 {
